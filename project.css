@@ -1,0 +1,243 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color: black;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding:0.5rem 0.75rem;
+}
+
+.nav-option{
+    /* background-color: #121212; */
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+
+    font-size: 1rem;
+    padding: 1rem;
+}
+.nav-option:hover{
+    opacity:1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.options{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0.5rem 0.75rem
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.2rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity:1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 1rem 1.25rem;
+}
+.box-p1{
+    background-color: #232323;
+    padding: 0.7rem;
+    font-weight: 700;
+    font-size:1rem
+}
+.box-p2{
+    background-color: #232323;
+    font-size: 0.85rem;
+    padding: 1rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 1.25 rem;
+    padding: 0.25rem 1rem ;
+    font-weight: 700;
+    color: black;
+    height: 2rem;
+    cursor: pointer;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 10;
+}
+.sticky-nav-icons{
+    font-size: 2rem;
+    margin-left: 0.75rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.sticky-nav-options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    margin-right: 1rem;
+}
+.nav-iteam{
+    margin-left: 1rem;
+}
+.sticky-nav-options i{
+    margin-right: 1.25rem;
+}
+.dark-badge{
+    /* background-color: black;
+    color: white; */
+}
+@media(max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+.cards{
+    background-color: #232323;
+    width: 250px;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.cards img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-title{
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.card-info{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:70%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity:1;
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.curr-time{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.progress-bar{
+    width: 70%;
+    margin-bottom: 1rem;
+}
